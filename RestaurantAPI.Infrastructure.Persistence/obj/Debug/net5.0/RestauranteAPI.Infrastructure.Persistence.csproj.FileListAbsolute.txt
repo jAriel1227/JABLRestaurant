@@ -1,0 +1,5 @@
+C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Persistence\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Persistence\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Persistence\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Persistence\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Persistence\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
