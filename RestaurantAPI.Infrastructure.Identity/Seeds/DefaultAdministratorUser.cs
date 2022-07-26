@@ -11,9 +11,9 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
 {
     public class DefaultAdministratorUser
     {
-        public static async Task SeedAsync(UserManager<RestaurantUsers> userManager, RoleManager<IdentityRole> roleManager)
+        public static async Task SeedAsync(UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
         {
-            RestaurantUsers adminUser = new() {
+            Users adminUser = new() {
                 UserName = "DefaultAdmin",
                 Name = "Jean",
                 LastName = "Reyes",

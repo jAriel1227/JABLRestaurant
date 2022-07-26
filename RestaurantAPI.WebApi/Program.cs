@@ -25,7 +25,7 @@ namespace RestaurantAPI.WebApi
 
                 try
                 {
-                    var userManager = services.GetRequiredService<UserManager<RestaurantUsers>>();
+                    var userManager = services.GetRequiredService<UserManager<Users>>();
                     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
                     await DefaultRoles.SeedAsync(userManager, roleManager);

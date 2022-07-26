@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jarie\\source\\repos\\Restaurante\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj": {}
+    "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jarie\\source\\repos\\Restaurante\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj": {
+    "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarie\\source\\repos\\Restaurante\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
         "projectName": "RestauranteAPI.Core.Domain",
-        "projectPath": "C:\\Users\\jarie\\source\\repos\\Restaurante\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
+        "projectPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
         "packagesPath": "C:\\Users\\jarie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarie\\source\\repos\\Restaurante\\RestaurantAPI.Core.Domain\\obj\\",
+        "outputPath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

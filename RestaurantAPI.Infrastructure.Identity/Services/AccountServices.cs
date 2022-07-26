@@ -15,11 +15,11 @@ namespace RestaurantAPI.Infrastructure.Identity.Services
     public class AccountServices : IAccountServices
     {
 
-        private readonly UserManager<RestaurantUsers> _userManager;
-        private readonly SignInManager<RestaurantUsers> _signInManager;
+        private readonly UserManager<Users> _userManager;
+        private readonly SignInManager<Users> _signInManager;
 
 
-        public AccountServices(UserManager<RestaurantUsers> userManager, SignInManager<RestaurantUsers> signInManager)
+        public AccountServices(UserManager<Users> userManager, SignInManager<Users> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -77,7 +77,7 @@ namespace RestaurantAPI.Infrastructure.Identity.Services
 
             var response = await _userManager.Users.ToListAsync();
 
-            foreach (RestaurantUsers user in response)
+            foreach (Users user in response)
             {
                var roles = await _userManager.GetRolesAsync(user);
 

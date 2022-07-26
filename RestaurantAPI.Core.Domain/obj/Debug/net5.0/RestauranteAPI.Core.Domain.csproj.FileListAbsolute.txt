@@ -10,3 +10,15 @@ C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Core.Domain\obj\Debug\net5
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Core.Domain\obj\Debug\net5.0\refint\RestauranteAPI.Core.Domain.dll
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.pdb
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Core.Domain\obj\Debug\net5.0\ref\RestauranteAPI.Core.Domain.dll
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\bin\Debug\net5.0\RestauranteAPI.Core.Domain.deps.json
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\bin\Debug\net5.0\RestauranteAPI.Core.Domain.dll
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\bin\Debug\net5.0\RestauranteAPI.Core.Domain.pdb
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.csproj.AssemblyReference.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.AssemblyInfo.cs
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.dll
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\refint\RestauranteAPI.Core.Domain.dll
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\RestauranteAPI.Core.Domain.pdb
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Core.Domain\obj\Debug\net5.0\ref\RestauranteAPI.Core.Domain.dll

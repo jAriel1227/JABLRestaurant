@@ -4,3 +4,9 @@ C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.WebApi\obj\Debug\net5.0\Re
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.AssemblyInfo.cs
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.csproj.AssemblyReference.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.AssemblyInfoInputs.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.AssemblyInfo.cs
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\obj\Debug\net5.0\RestauranteAPI.WebApi.MvcApplicationPartsAssemblyInfo.cache

@@ -31,7 +31,7 @@ namespace RestaurantAPI.Infrastructure.Identity
             #endregion
 
             #region Identity
-            service.AddIdentity<RestaurantUsers, IdentityRole>()
+            service.AddIdentity<Users, IdentityRole>()
                 .AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders();
 
             service.ConfigureApplicationCookie(options =>

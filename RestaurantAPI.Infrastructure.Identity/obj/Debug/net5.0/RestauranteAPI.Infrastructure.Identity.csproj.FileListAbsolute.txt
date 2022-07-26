@@ -3,3 +3,8 @@ C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Identity\ob
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.AssemblyInfoInputs.cache
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.AssemblyInfo.cs
 C:\Users\jarie\source\repos\Restaurante\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.csproj.CoreCompileInputs.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.csproj.AssemblyReference.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.AssemblyInfoInputs.cache
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.AssemblyInfo.cs
+C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.Infrastructure.Identity\obj\Debug\net5.0\RestauranteAPI.Infrastructure.Identity.csproj.CoreCompileInputs.cache

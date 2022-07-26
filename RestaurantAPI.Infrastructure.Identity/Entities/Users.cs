@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantAPI.Infrastructure.Identity.Entities
 {
-    public class RestaurantUsers : IdentityUser
+    public class Users : IdentityUser
     {
         public string Name { get; set; }
         public string LastName { get; set; }
