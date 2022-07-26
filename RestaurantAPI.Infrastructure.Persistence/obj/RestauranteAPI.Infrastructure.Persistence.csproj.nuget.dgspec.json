@@ -11,7 +11,7 @@
         "projectName": "RestauranteAPI.Core.Application",
         "projectPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\RestauranteAPI.Core.Application.csproj",
         "packagesPath": "C:\\Users\\jarie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\obj\\",
+        "outputPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -112,7 +112,7 @@
         "projectName": "RestauranteAPI.Core.Domain",
         "projectPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
         "packagesPath": "C:\\Users\\jarie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\obj\\",
+        "outputPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
