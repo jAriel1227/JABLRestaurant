@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BP9T6lhazVpdbALqLLCMxXMdRuWZMnhFoOhXglWYRkP3HCYsNWDT1vvon8SbkqXDxLrpv57/JbEeoMoz7y85mA==",
+  "dgSpecHash": "TNtVxDXLf5rPi/+ATr3vQKGx/qVwtXRRqmCMph9j4jNJiedk2zr4iQwNyZBUn9qhdznLAis0cWYJQ+81KjXvFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
+  "projectFilePath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Core.Domain\\RestauranteAPI.Core.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
