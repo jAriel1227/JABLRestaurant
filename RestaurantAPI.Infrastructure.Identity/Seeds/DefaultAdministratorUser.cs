@@ -15,11 +15,11 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
         {
             Users adminUser = new() {
                 UserName = "DefaultAdmin",
-                Name = "Jean",
-                LastName = "Reyes",
-                Email = "jreyes@dominicanbanking.com.do",
+                Name = "Johanly",
+                LastName = "Baez",
+                Email = "baezjohanly@gmail.com",
                 EmailConfirmed = true,
-                PhoneNumber="+1 809 935 0913",
+                PhoneNumber="+1 829 804 0292",
                 PhoneNumberConfirmed = true
             };
 
@@ -30,12 +30,12 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
 
                 if (user==null)
                 {
-                    await userManager.CreateAsync(adminUser,"P@ssw0rd");
+                    await userManager.CreateAsync(adminUser,"122702");
 
                     await userManager.AddToRoleAsync(adminUser,Roles.ADMINISTRATOR.ToString());
                 }
             }
             
-                   }
+        }
     }
 }

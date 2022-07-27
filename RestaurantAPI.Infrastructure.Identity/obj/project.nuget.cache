@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/QRPVTjXxIeg/fad+4yeUe9tDlHbdAIx44n/KcPdWLQZPQO/Ug3p9Q3wzArf65rCTYYf0LUZ87/rY0ZFCNQKmQ==",
+  "dgSpecHash": "lZP0WJ5FOQk7ftkXvlFtc5/ovUeCkvs9VVfPAOk2AlK3YXMgP3HN2O9iU7i3OVfUkT5wBtm0QZk9Rm1xuOXK1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\RestauranteAPI.Infrastructure.Identity.csproj",
+  "projectFilePath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\RestauranteAPI.Infrastructure.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarie\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\jarie\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
