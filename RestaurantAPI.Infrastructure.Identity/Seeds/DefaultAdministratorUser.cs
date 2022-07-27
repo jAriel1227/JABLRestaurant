@@ -14,7 +14,7 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
         public static async Task SeedAsync(UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
         {
             Users adminUser = new() {
-                UserName = "DefaultAdmin",
+                UserName = "DefaultSuperAdmin",
                 Name = "Johanly",
                 LastName = "Baez",
                 Email = "baezjohanly@gmail.com",
@@ -23,6 +23,16 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
                 PhoneNumberConfirmed = true
             };
 
+            Users adminUser1 = new()
+            {
+                UserName = "DefaultAdmin",
+                Name = "Ariel",
+                LastName = "Baez",
+                Email = "baezjohanly16@gmail.com",
+                EmailConfirmed = true,
+                PhoneNumber = "+1 829 804 0292",
+                PhoneNumberConfirmed = true
+            };
 
             if (userManager.Users.All(u=>u.Id!=adminUser.Id))
             {
@@ -32,10 +42,22 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
                 {
                     await userManager.CreateAsync(adminUser,"122702");
 
-                    await userManager.AddToRoleAsync(adminUser,Roles.ADMINISTRATOR.ToString());
+                    await userManager.AddToRoleAsync(adminUser,Roles.SUPERADMIN.ToString());
                 }
             }
-            
+
+            if (userManager.Users.All(u => u.Id != adminUser1.Id))
+            {
+                var user = await userManager.FindByEmailAsync(adminUser1.Email);
+
+                if (user == null)
+                {
+                    await userManager.CreateAsync(adminUser, "122702");
+
+                    await userManager.AddToRoleAsync(adminUser, Roles.SUPERADMIN.ToString());
+                }
+            }
+
         }
     }
 }
