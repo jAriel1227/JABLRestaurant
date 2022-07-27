@@ -26,11 +26,4 @@
     <ProjectReference Include="..\RestaurantAPI.Core.Domain\RestauranteAPI.Core.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewModel\TStatus\" />
-    <Folder Include="ViewModel\Tables\" />
-    <Folder Include="ViewModel\PCategory\" />
-    <Folder Include="ViewModel\Plates\" />
-  </ItemGroup>
-
 </Project>
