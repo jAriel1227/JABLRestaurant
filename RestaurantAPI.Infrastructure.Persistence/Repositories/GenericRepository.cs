@@ -1,13 +1,10 @@
-﻿using RestaurantAPI.Core.Application.Interfaces.Repository;
-using RestaurantAPI.Infrastructure.Persistence.Contexts;
+﻿using RestauranteAPI.Core.Application.Interfaces.Repository;
+using RestauranteAPI.Infrastructure.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Infrastructure.Persistence.Repositories
+namespace RestauranteAPI.Infrastructure.Persistence.Repositories
 {
     public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity : class
     {

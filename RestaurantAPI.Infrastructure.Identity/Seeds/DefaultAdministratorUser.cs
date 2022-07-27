@@ -54,7 +54,7 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
                 {
                     await userManager.CreateAsync(adminUser, "122702");
 
-                    await userManager.AddToRoleAsync(adminUser, Roles.SUPERADMIN.ToString());
+                    await userManager.AddToRoleAsync(adminUser, Roles.ADMINISTRATOR.ToString());
                 }
             }
 

@@ -1,10 +1,9 @@
-﻿using RestaurantAPI.Core.Application.Interfaces.Services;
-using RestaurantAPI.Core.Application.Services;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using RestauranteAPI.Core.Application.Interfaces.Services;
+using RestauranteAPI.Core.Application.Services;
 
-namespace RestaurantAPI.Core.Application
+namespace RestauranteAPI.Core.Application
 {
     public static class ServicesRegistration
     {
@@ -14,6 +13,9 @@ namespace RestaurantAPI.Core.Application
 
             #region Services
             service.AddTransient(typeof(IGenericServices<,,>), typeof(GenericServices<,,>));
+            service.AddTransient<IIngredientsServices, IngredientsServices>();
+            service.AddTransient<IOrdersServices, OrdersServices>();
+            service.AddTransient<IOStatusServices, OStatusServices>();
             #endregion
 
         }

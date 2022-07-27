@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Core.Application.Interfaces.Repository
+namespace RestauranteAPI.Core.Application.Interfaces.Repository
 {
     public interface IGenericRepository<Entity> where Entity : class
     {

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using RestaurantAPI.Core.Application.Interfaces.Repository;
+using RestauranteAPI.Core.Application.Interfaces.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using RestaurantAPI.Core.Application.Interfaces.Services;
+using RestauranteAPI.Core.Application.Interfaces.Services;
 
-namespace RestaurantAPI.Core.Application.Services
+namespace RestauranteAPI.Core.Application.Services
 {
     public class GenericServices<SaveViewModel, ViewModel, Entity> : IGenericServices<SaveViewModel, ViewModel, Entity>
         where SaveViewModel : class

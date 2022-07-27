@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using RestauranteAPI.Core.Domain.Entities;
 
-namespace RestaurantAPI.Infrastructure.Persistence.Contexts
+namespace RestauranteAPI.Infrastructure.Persistence.Contexts
 {
     public class ApplicationContext : DbContext
     {

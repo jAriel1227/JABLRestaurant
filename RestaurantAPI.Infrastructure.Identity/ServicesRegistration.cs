@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace RestaurantAPI.Infrastructure.Identity
+namespace RestauranteAPI.Infrastructure.Identity
 {
     public static class ServicesRegistration
     {

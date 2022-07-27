@@ -1,11 +1,11 @@
-﻿using RestaurantAPI.Core.Application.Interfaces.Repository;
-using RestaurantAPI.Infrastructure.Persistence.Contexts;
-using RestaurantAPI.Infrastructure.Persistence.Repositories;
+﻿using RestauranteAPI.Core.Application.Interfaces.Repository;
+using RestauranteAPI.Infrastructure.Persistence.Contexts;
+using RestauranteAPI.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace RestaurantAPI.Infrastructure.Persistence
+namespace RestauranteAPI.Infrastructure.Persistence
 {
     public static class ServicesRegistration
     {
@@ -30,6 +30,9 @@ namespace RestaurantAPI.Infrastructure.Persistence
             #region Repository
 
             service.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            service.AddTransient<IIngredientsRepository, IngredientsRepository>();
+            service.AddTransient<IOrdersRepository, OrdersRepository>();
+            service.AddTransient<IOStatusRepository, OStatusRepository>();
             #endregion
         }
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Core.Application.Interfaces.Services
+namespace RestauranteAPI.Core.Application.Interfaces.Services
 {
     public interface IGenericServices<SaveViewModel, ViewModel, Entity>
         where SaveViewModel : class
