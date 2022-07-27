@@ -9,6 +9,7 @@ namespace RestauranteAPI.Core.Application.ViewModel.Ingredients
     public class IngredientsViewModel
     {
         public string IngredientName { get; set; }
-        public int PlateId { get; set; }
+        public int PlateId { get; set; }    
+        public string Plates { get; set; }
     }
 }
