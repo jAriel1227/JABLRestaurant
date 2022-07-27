@@ -3,11 +3,6 @@ using RestauranteAPI.Core.Application.Interfaces.Repository;
 using RestauranteAPI.Core.Application.Interfaces.Services;
 using RestauranteAPI.Core.Application.ViewModel.OStatus;
 using RestauranteAPI.Core.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RestauranteAPI.Core.Application.Services
 {

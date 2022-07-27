@@ -1,5 +1,4 @@
-﻿
-using AutoMapper;
+﻿using AutoMapper;
 using RestauranteAPI.Core.Application.Interfaces.Repository;
 using RestauranteAPI.Core.Application.Interfaces.Services;
 using RestauranteAPI.Core.Application.ViewModel.PCategory;
