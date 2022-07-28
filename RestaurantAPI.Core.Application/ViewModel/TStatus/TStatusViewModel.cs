@@ -1,13 +1,11 @@
-﻿using System;
+﻿using RestauranteAPI.Core.Application.ViewModel.Tables;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RestauranteAPI.Core.Application.ViewModel.TStatus
 {
     public class TStatusViewModel
     {
         public string Name { get; set; }
+        public List<TablesViewModel> Tables { get; set; }
     }
 }

@@ -10,7 +10,6 @@ namespace RestauranteAPI.Core.Domain.Entities
     public class TablesStatus : AuditableBaseEntity
     {
         public string Name { get; set; }
-
         public ICollection<Tables> Tables { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestauranteAPI.Core.Application.ViewModel.Plates;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,7 @@ namespace RestauranteAPI.Core.Application.ViewModel.Orders
         public int IdPlates { get; set; }
         public bool SubTotal { get; set; }
         public int StateId { get; set; }
+        public string OdersStatus { get; set; }
+        public List<PlatesViewModel> Plates { get; set; }
     }
 }

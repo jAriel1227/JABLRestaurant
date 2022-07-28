@@ -103,6 +103,5 @@ namespace RestaurantAPI.Infrastructure.Identity.Services
         {
             await _signInManager.SignOutAsync();
         }
-
     }
 }

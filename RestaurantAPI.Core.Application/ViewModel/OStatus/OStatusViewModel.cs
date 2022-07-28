@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestauranteAPI.Core.Application.ViewModel.Orders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,6 @@ namespace RestauranteAPI.Core.Application.ViewModel.OStatus
     public class OStatusViewModel
     {
         public string Name { get; set; }
+        public List<OrdersViewModel> Oders { get; set; }
     }
 }

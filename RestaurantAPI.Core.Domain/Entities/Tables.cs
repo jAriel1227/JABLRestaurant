@@ -12,7 +12,6 @@ namespace RestauranteAPI.Core.Domain.Entities
         public int Numberofpeople { get; set; }
         public string Description { get; set; }
         public int StateId { get; set; }
-
         public TablesStatus TablesStatus { get; set; }
     }
 }
