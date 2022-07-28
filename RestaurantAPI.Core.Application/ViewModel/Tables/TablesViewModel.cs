@@ -11,5 +11,6 @@ namespace RestauranteAPI.Core.Application.ViewModel.Tables
         public int Numberofpeople { get; set; }
         public string Description { get; set; }
         public int StateId { get; set; }
+        public string TablesStatus { get; set; }
     }
 }

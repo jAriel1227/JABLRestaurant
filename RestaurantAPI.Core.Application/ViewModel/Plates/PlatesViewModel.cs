@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestauranteAPI.Core.Application.ViewModel.Ingredients;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,9 @@ namespace RestauranteAPI.Core.Application.ViewModel.Plates
         public int givePeple { get; set; }
         public int IdCategory { get; set; }
         public int IdOrders { get; set; }
+        public string PlatesIngredients { get; set; }
+        public string Oders { get; set; }
+        public string PlatesCategory { get; set; }
+        public List<IngredientsViewModel> Ingredients { get; set; }
     }
 }
