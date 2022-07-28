@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace RestaurantAPI.Core.Application.DTOS.Account
+namespace RestauranteAPI.Core.Application.DTOS.Account
 {
     public class AccountResponse
     {

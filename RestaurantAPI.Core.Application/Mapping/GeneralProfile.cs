@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using RestaurantAPI.Core.Application.DTOS.Account;
 using RestauranteAPI.Core.Application.ViewModel.Ingredients;
 using RestauranteAPI.Core.Application.ViewModel.Orders;
 using RestauranteAPI.Core.Application.ViewModel.OStatus;

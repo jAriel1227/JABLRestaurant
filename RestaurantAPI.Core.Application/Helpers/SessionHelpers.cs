@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Core.Application.Helpers
+namespace RestauranteAPI.Core.Application.Helpers
 {
     public static class SessionHelpers
     {

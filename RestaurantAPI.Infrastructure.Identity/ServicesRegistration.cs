@@ -1,12 +1,11 @@
-﻿using RestaurantAPI.Core.Application.Interfaces.Services;
+﻿using RestauranteAPI.Core.Application.Interfaces.Services;
 using RestaurantAPI.Infrastructure.Identity.Contexts;
-using RestaurantAPI.Infrastructure.Identity.Entities;
-using RestaurantAPI.Infrastructure.Identity.Services;
+using RestauranteAPI.Infrastructure.Identity.Entities;
+using RestauranteAPI.Infrastructure.Identity.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace RestauranteAPI.Infrastructure.Identity
 {
@@ -32,7 +31,8 @@ namespace RestauranteAPI.Infrastructure.Identity
 
             #region Identity
             service.AddIdentity<Users, IdentityRole>()
-                .AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders();
+                .AddEntityFrameworkStores<IdentityContext>()
+                .AddDefaultTokenProviders();
 
             service.ConfigureApplicationCookie(options =>
                 {

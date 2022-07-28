@@ -1,5 +1,5 @@
-﻿using RestaurantAPI.Core.Application.Enums;
-using RestaurantAPI.Infrastructure.Identity.Entities;
+﻿using RestauranteAPI.Core.Application.Enums;
+using RestauranteAPI.Infrastructure.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -7,23 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Infrastructure.Identity.Seeds
+namespace RestauranteAPI.Infrastructure.Identity.Seeds
 {
     public class DefaultAdministratorUser
     {
         public static async Task SeedAsync(UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
-        {
-            Users adminUser = new() {
-                UserName = "DefaultSuperAdmin",
-                Name = "Johanly",
-                LastName = "Baez",
-                Email = "baezjohanly@gmail.com",
-                EmailConfirmed = true,
-                PhoneNumber="+1 829 804 0292",
-                PhoneNumberConfirmed = true
-            };
-
-            Users adminUser1 = new()
+        {    
+            Users adminUser = new()
             {
                 UserName = "DefaultAdmin",
                 Name = "Ariel",
@@ -32,17 +22,7 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
                 EmailConfirmed = true,
                 PhoneNumber = "+1 829 804 0292",
                 PhoneNumberConfirmed = true
-            };
-            Users waiter = new()
-            {
-                UserName = "DefaultWaiter",
-                Name = "Juanly",
-                LastName = "Rodriguez",
-                Email = "juanly@gmail.com",
-                EmailConfirmed = true,
-                PhoneNumber = "+1 849 322 0382",
-                PhoneNumberConfirmed = true
-            };
+            };           
 
             if (userManager.Users.All(u=>u.Id!=adminUser.Id))
             {
@@ -50,36 +30,12 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
 
                 if (user==null)
                 {
-                    await userManager.CreateAsync(adminUser,"122702");
+                    await userManager.CreateAsync(adminUser, "27P@ssword");
 
-                    await userManager.AddToRoleAsync(adminUser,Roles.SUPERADMIN.ToString());
+                    await userManager.AddToRoleAsync(adminUser,Roles.ADMINISTRATOR.ToString());
+                    await userManager.AddToRoleAsync(adminUser, Roles.WAITER.ToString());
                 }
-            }
-
-            if (userManager.Users.All(u => u.Id != adminUser1.Id))
-            {
-                var user = await userManager.FindByEmailAsync(adminUser1.Email);
-
-                if (user == null)
-                {
-                    await userManager.CreateAsync(adminUser1, "122702");
-
-                    await userManager.AddToRoleAsync(adminUser1, Roles.ADMINISTRATOR.ToString());
-                }
-            }
-
-            if (userManager.Users.All(u => u.Id != waiter.Id))
-            {
-                var user = await userManager.FindByEmailAsync(waiter.Email);
-
-                if (user == null)
-                {
-                    await userManager.CreateAsync(waiter, "122702");
-
-                    await userManager.AddToRoleAsync(waiter, Roles.ADMINISTRATOR.ToString());
-                }
-            }
-
+            } 
         }
     }
 }

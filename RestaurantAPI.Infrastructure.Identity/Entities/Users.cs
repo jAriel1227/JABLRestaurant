@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Infrastructure.Identity.Entities
+namespace RestauranteAPI.Infrastructure.Identity.Entities
 {
     public class Users : IdentityUser
     {

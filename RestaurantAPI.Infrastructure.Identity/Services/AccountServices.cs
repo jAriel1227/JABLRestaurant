@@ -1,16 +1,14 @@
-﻿using RestaurantAPI.Core.Application.DTOS.Account;
-using RestaurantAPI.Core.Application.Enums;
-using RestaurantAPI.Core.Application.Interfaces.Services;
-using RestaurantAPI.Infrastructure.Identity.Entities;
+﻿using RestauranteAPI.Core.Application.DTOS.Account;
+using RestauranteAPI.Core.Application.Interfaces.Services;
+using RestauranteAPI.Infrastructure.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using RestauranteAPI.Core.Application.Enums;
 
-namespace RestaurantAPI.Infrastructure.Identity.Services
+namespace RestauranteAPI.Infrastructure.Identity.Services
 {
     public class AccountServices : IAccountServices
     {
@@ -24,7 +22,6 @@ namespace RestaurantAPI.Infrastructure.Identity.Services
             _userManager = userManager;
             _signInManager = signInManager;
         }
-
         public async Task<AuthenticationResponse> AuthenticateAsync(AuthenticationRequest request)
         {
 
@@ -102,6 +99,166 @@ namespace RestaurantAPI.Infrastructure.Identity.Services
         public async Task LogOutAsync()
         {
             await _signInManager.SignOutAsync();
+        }       
+
+        public async Task<RegisterResponse> RegisterAdministratorAsync(RegisterRequest request)
+        {
+            RegisterResponse response = new() { HasError = false };
+
+            var userWithSameUserName = await _userManager.FindByNameAsync(request.Username);
+
+            if (userWithSameUserName != null)
+            {
+                response.HasError = true;
+                response.Error = $"The username {request.Username} has been taken.";
+                return response;
+            }
+
+            var userWithSameEmail = await _userManager.FindByEmailAsync(request.Email);
+
+            if (userWithSameEmail != null)
+            {
+                response.HasError = true;
+                response.Error = $"The Email {request.Email} already registered.";
+                return response;
+            }
+
+            var user = new Users
+            {
+                Email = request.Email,
+                Name = request.Name,
+                LastName = request.LastName,
+                PhoneNumber = request.Phone,
+                UserName = request.Username,
+                Documents = request.Documents
+            };
+
+            var result = await _userManager.CreateAsync(user, request.Password);
+
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, Roles.ADMINISTRATOR.ToString());
+            }
+            else
+            {
+                response.HasError = true;
+                response.Error = $"An Error ocurred, please try again.";
+                return response;
+            }
+
+            return response;
+
+        }
+
+        public async Task<ActivateResponse> ActivateAsync(ActivateRequest request)
+        {
+
+            ActivateResponse response = new()
+            {
+                HasError = false
+            };
+
+            var user = await _userManager.FindByIdAsync(request.UserId);
+
+            if (user == null)
+            {
+                response.HasError = true;
+                response.Error = $"The user with this Id {request.UserId} doesn't exist";
+                return response;
+            }
+
+            user.EmailConfirmed = true;
+
+            await _userManager.UpdateAsync(user);
+
+            return response;
+
+        }
+        public async Task<PasswordResponse> ChangePasswordAsync(PasswordRequest request)
+        {
+
+            var user = await _userManager.FindByIdAsync(request.UserId);
+
+            string token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            var response = await _userManager.ResetPasswordAsync(user, token, request.NewPassword);
+
+            PasswordResponse passwordResponse = new();
+
+            if (response.Succeeded)
+            {
+                passwordResponse.HasError = false;
+            }
+            if (response.Errors.Count() > 0)
+            {
+                foreach (var error in response.Errors)
+                {
+                    passwordResponse.HasError = true;
+                    passwordResponse.Error = error.Description;
+                }
+            }
+
+            return passwordResponse;
+        }
+        public async Task<EditResponse> EditAccountAsync(EditRequest request)
+        {
+
+            var user = await _userManager.FindByIdAsync(request.Id);
+
+            user.Name = request.Name;
+            user.NormalizedEmail = request.Email.ToUpper();
+            user.NormalizedUserName = request.Username.ToUpper();
+            user.LastName = request.LastName;
+            user.PhoneNumber = request.Phone;
+            user.Documents = request.Documents;
+            user.Email = request.Email;
+            user.UserName = request.Username;
+
+            var usm = await _userManager.UpdateAsync(user);
+
+            EditResponse editResponse = new();
+
+            if (usm.Succeeded)
+            {
+                editResponse.HasError = false;
+            }
+            else
+            {
+                editResponse.HasError = true;
+                foreach (var error in usm.Errors)
+                {
+                    editResponse.HasError = true;
+                    editResponse.Error = error.Description;
+                }
+            }
+
+            return editResponse;
+
+        }
+
+        public async Task<ActivateResponse> DeactivateAsync(ActivateRequest request)
+        {
+
+            ActivateResponse response = new()
+            {
+                HasError = false
+            };
+
+            var user = await _userManager.FindByIdAsync(request.UserId);
+
+            if (user == null)
+            {
+                response.HasError = true;
+                response.Error = $"The user with this Id {request.UserId} doesn't exist";
+                return response;
+            }
+
+            user.EmailConfirmed = false;
+
+            await _userManager.UpdateAsync(user);
+
+            return response;
+
         }
     }
 }

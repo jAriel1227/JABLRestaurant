@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Core.Application.Enums
+namespace RestauranteAPI.Core.Application.Enums
 {
     public enum Roles
     {

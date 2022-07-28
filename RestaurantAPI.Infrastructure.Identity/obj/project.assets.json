@@ -6303,9 +6303,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\RestauranteAPI.Infrastructure.Identity.csproj",
+      "projectUniqueName": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\RestauranteAPI.Infrastructure.Identity.csproj",
       "projectName": "RestauranteAPI.Infrastructure.Identity",
-      "projectPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\RestauranteAPI.Infrastructure.Identity.csproj",
+      "projectPath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\RestauranteAPI.Infrastructure.Identity.csproj",
       "packagesPath": "C:\\Users\\jarie\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Infrastructure.Identity\\obj\\",
       "projectStyle": "PackageReference",
@@ -6329,8 +6329,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\RestauranteAPI.Core.Application.csproj": {
-              "projectPath": "C:\\Users\\jarie\\Source\\Repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\RestauranteAPI.Core.Application.csproj"
+            "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\RestauranteAPI.Core.Application.csproj": {
+              "projectPath": "C:\\Users\\jarie\\source\\repos\\JABLRestaurant\\RestaurantAPI.Core.Application\\RestauranteAPI.Core.Application.csproj"
             }
           }
         }

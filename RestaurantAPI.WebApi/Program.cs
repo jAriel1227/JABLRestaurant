@@ -1,14 +1,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using RestaurantAPI.Infrastructure.Identity.Entities;
-using RestaurantAPI.Infrastructure.Identity.Seeds;
+using RestauranteAPI.Infrastructure.Identity.Entities;
+using RestauranteAPI.Infrastructure.Identity.Seeds;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace RestaurantAPI.WebApi
@@ -29,7 +25,10 @@ namespace RestaurantAPI.WebApi
                     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
                     await DefaultRoles.SeedAsync(userManager, roleManager);
-                    await DefaultAdministratorUser.SeedAsync(userManager, roleManager);
+                    await DefaultSuperAdminUser.SeedAsync(userManager, roleManager);
+                    await DefaultAdministratorUser.SeedAsync(userManager, roleManager);                   
+                    await DefaultWaiterUser.SeedAsync(userManager, roleManager);
+
                 }
                 catch (Exception ex)
                 {
@@ -39,7 +38,6 @@ namespace RestaurantAPI.WebApi
 
             host.Run();
         }
-
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>

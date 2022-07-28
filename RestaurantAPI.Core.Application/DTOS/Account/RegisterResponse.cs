@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantAPI.Core.Application.DTOS.Account
+namespace RestauranteAPI.Core.Application.DTOS.Account
 {
     public class RegisterResponse
     {
