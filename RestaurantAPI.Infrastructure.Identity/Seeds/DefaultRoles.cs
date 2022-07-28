@@ -16,8 +16,6 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
             await roleManager.CreateAsync(new(Roles.SUPERADMIN.ToString()));
             await roleManager.CreateAsync(new(Roles.ADMINISTRATOR.ToString()));            
             await roleManager.CreateAsync(new(Roles.WAITER.ToString()));
-
-
         }
     }
 }

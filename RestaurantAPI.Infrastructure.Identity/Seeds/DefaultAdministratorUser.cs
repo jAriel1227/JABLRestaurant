@@ -33,6 +33,16 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
                 PhoneNumber = "+1 829 804 0292",
                 PhoneNumberConfirmed = true
             };
+            Users waiter = new()
+            {
+                UserName = "DefaultWaiter",
+                Name = "Juanly",
+                LastName = "Rodriguez",
+                Email = "juanly@gmail.com",
+                EmailConfirmed = true,
+                PhoneNumber = "+1 849 322 0382",
+                PhoneNumberConfirmed = true
+            };
 
             if (userManager.Users.All(u=>u.Id!=adminUser.Id))
             {
@@ -52,9 +62,21 @@ namespace RestaurantAPI.Infrastructure.Identity.Seeds
 
                 if (user == null)
                 {
-                    await userManager.CreateAsync(adminUser, "122702");
+                    await userManager.CreateAsync(adminUser1, "122702");
 
-                    await userManager.AddToRoleAsync(adminUser, Roles.ADMINISTRATOR.ToString());
+                    await userManager.AddToRoleAsync(adminUser1, Roles.ADMINISTRATOR.ToString());
+                }
+            }
+
+            if (userManager.Users.All(u => u.Id != waiter.Id))
+            {
+                var user = await userManager.FindByEmailAsync(waiter.Email);
+
+                if (user == null)
+                {
+                    await userManager.CreateAsync(waiter, "122702");
+
+                    await userManager.AddToRoleAsync(waiter, Roles.ADMINISTRATOR.ToString());
                 }
             }
 
