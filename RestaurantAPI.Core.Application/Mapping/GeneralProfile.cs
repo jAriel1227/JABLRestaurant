@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using RestauranteAPI.Core.Application.DTOS.Account;
 using RestauranteAPI.Core.Application.ViewModel.Ingredients;
 using RestauranteAPI.Core.Application.ViewModel.Orders;
 using RestauranteAPI.Core.Application.ViewModel.OStatus;
@@ -6,6 +7,7 @@ using RestauranteAPI.Core.Application.ViewModel.PCategory;
 using RestauranteAPI.Core.Application.ViewModel.Plates;
 using RestauranteAPI.Core.Application.ViewModel.Tables;
 using RestauranteAPI.Core.Application.ViewModel.TStatus;
+using RestauranteAPI.Core.Application.ViewModel.User;
 using RestauranteAPI.Core.Domain.Entities;
 
 namespace RestaurantAPI.Core.Application.Mapping
@@ -14,6 +16,21 @@ namespace RestaurantAPI.Core.Application.Mapping
     {
         public GeneralProfile()
         {
+            CreateMap<AuthenticationRequest, LoginViewModel>()
+                .ForMember(x => x.HasError, opt => opt.Ignore())
+                .ForMember(x => x.Error, opt => opt.Ignore())
+                .ReverseMap();
+
+            CreateMap<RegisterRequest, SaveUserViewModel>()
+                .ForMember(x => x.UserType, opt => opt.Ignore())
+                .ForMember(x => x.HasError, opt => opt.Ignore())
+                .ForMember(x => x.Error, opt => opt.Ignore())
+                .ReverseMap();
+
+            CreateMap<AccountResponse, UserViewModel>()
+                .ForMember(x => x.Roles, opt => opt.MapFrom(ac => ac.Roles))
+                .ReverseMap();
+
             CreateMap<Ingredients, IngredientsViewModel>()
                     .ReverseMap()
                     .ForMember(x => x.Plates, opt => opt.Ignore())
@@ -124,6 +141,13 @@ namespace RestaurantAPI.Core.Application.Mapping
                    .ForMember(x => x.Modified, opt => opt.Ignore())
                    .ForMember(x => x.ModifiedBy, opt => opt.Ignore());
 
+            CreateMap<ActivateRequest, ActivateViewModel>()
+                .ReverseMap();
+
+            CreateMap<EditRequest, SaveEditViewModel>()
+                .ForMember(x => x.UserType, opt => opt.Ignore())
+                .ForMember(x => x.Amount, opt => opt.Ignore())
+                .ReverseMap();
         }       
     }
 }

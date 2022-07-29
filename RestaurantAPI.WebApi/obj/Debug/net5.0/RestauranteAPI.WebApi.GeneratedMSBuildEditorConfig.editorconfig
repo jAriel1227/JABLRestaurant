@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RestauranteAPI.WebApi
-build_property.ProjectDir = C:\Users\jarie\source\repos\JABLRestaurant\RestaurantAPI.WebApi\
+build_property.ProjectDir = C:\Users\jarie\Source\Repos\JABLRestaurant\RestaurantAPI.WebApi\

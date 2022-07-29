@@ -27,15 +27,6 @@ namespace RestauranteAPI.Core.Application.Services
             return response;
         }
 
-        
-        public async Task<PasswordResponse> ChangePasswordAsync(PasswordRequest password) {
-
-            PasswordResponse response = await _accountServices.ChangePasswordAsync(password);
-
-            return response;
-
-        }
-
         public async Task<EditResponse> EditUserAsync(SaveEditViewModel vm) {
             EditRequest request = _mapper.Map<EditRequest>(vm);
 
